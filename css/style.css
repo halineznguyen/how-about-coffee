@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: transparent;
+}
+
+#filter-section {
+    width: 20%;
+    height: fit-content;
+    padding: 1rem;
+    background-color: rgba(168, 168, 168, 0.35);
+    border: #000000 0.05rem solid;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#filter-section h1 {
+    font-size: 3rem;
+}
