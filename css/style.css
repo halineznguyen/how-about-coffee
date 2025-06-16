@@ -5,10 +5,13 @@
 }
 
 #main-container {
+    width: 85%;
+    height: 100vh;
+    margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background: transparent;
+    background: #ffd3d3;
 }
 
 #filter-section {
@@ -25,4 +28,44 @@
 
 #filter-section h1 {
     font-size: 3rem;
+}
+
+#coffee-places-section {
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    padding-left: 2rem;
+    background-color: royalblue;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.coffee-place {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: aqua;
+}
+
+.coffee-place-item {
+    width: 100vh;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color:bisque;
+    border: #000000 solid 0.05rem;
+    border-radius: 1rem;
 }

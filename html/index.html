@@ -15,27 +15,94 @@
             <h1>Filter</h1>
             <section>
                 <h2>Purpose</h2>
+                <select id="purpose-select">
+                    <option value="" selected disabled hidden>Choose functionalities...</option>
+                    <option value="study_work">Study/Work</option>
+                    <option value="pet_cafe">Pet Cafe</option>
+                    <option value="outdoor">Outdoor</option>
+                    <option value="photo_view">Photo/View</option>
+                </select>
             </section>
+
             <section>
                 <h2>Aesthetic</h2>
+                <input id="aesthetic-text" type="text" placeholder="Type in your desired aesthetics...">
             </section>
-            <section>
+            <section class="vertical">
                 <h2>Noise Level</h2>
+                <div class="horizontal">
+                    <input id="loud-noise-level" type="radio" unchecked>
+                    <label for="loud-noise-level">You can talk loudly</label>
+                </div>
+                <div class="horizontal">
+                    <input id="keep-it-down-level" type="radio" unchecked>
+                    <label for="keep-it-down-level">You can talk but please keep it down</label>
+                </div>
+                <div class="horizontal">
+                    <input id="quiet-level" type="radio" unchecked>
+                    <label for="quiet-level">No, it is so quiet here</label>
+                </div>
             </section>
-            <section>
+
+            <section class="vertical">
                 <h2>Lighting</h2>
+                <div class="horizontal">
+                    <input id="white-light" type="radio" unchecked>
+                    <label for="white-light">White light</label>
+                </div>
+                <div class="horizontal">
+                    <input id="yellow-light" type="radio" unchecked>
+                <label for="yellow-light">Yellow light</label>
+                </div>                
             </section>
             <section>
                 <h2>Opening Hours</h2>
+                <div class="horizontal">
+                    <input id="opeining-text" type="text" placeholder="7:00">
+                    <p>to</p>
+                    <input id="closing-text" type="text" placeholder="22:00">
+                </div>
             </section>
             <section>
                 <h2>Price Range (VND)</h2>
+                <div class="horizontal">
+                    <input id="lowest-price-text" type="text" placeholder="20,000">
+                    <p>to</p>
+                    <input id="highest-price-text" type="text" placeholder="80,000">
+                </div>
+            </section>
+            <section>
+                <button id="display-button" type="submit">Display</button>
             </section>
         </section>
         <section id="coffee-places-section"> <!--Coffee Place List-->
             <h1>Shops</h1>
-            <section class="coffee-place">
-                <h2>Shop Name</h2>
+            <section>
+                <ul class="coffee-place">
+                    <li class="coffee-place-item">
+                        <p>Name 1</p>
+                        <p>Purpose:</p>
+                        <p>Aesthetic</p>
+                        <p>Noise Level</p>
+                        <p>Lighting</p>
+                        <p>Opening Hours</p>
+                        <p>Price Range</p>
+                    </li>
+                    <li class="coffee-place-item">
+                        <p>Name 2</p>
+                        <p>Purpose:</p>
+                        <p>Aesthetic</p>
+                        <p>Noise Level</p>
+                        <p>Lighting</p>
+                        <p>Opening Hours</p>
+                        <p>Price Range</p>
+                    </li>
+                </ul>
+                <section id="pagination">
+                    <button id="previous-page-button" type="button">Previous</button>
+                    <span id="current-page">1</span>
+                    <button id="next-page-button" type="button">Next</button>
+                </section>
             </section>
         </section>
     </div>
